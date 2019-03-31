@@ -1,0 +1,95 @@
+/* My Stylesheet - Tutorial for Parallax Credit to W3schools
+https://www.w3schools.com/howto/howto_css_parallax.asp
+ */
+
+html, body {
+  background-color: black;
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  padding-top: 54px;
+}
+
+/* Navbar - credit Slickbar.io */
+
+#menu {
+  display: none;
+  color: white;
+}
+
+.slicknav_menu {
+  text-align: right;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.moscow {
+  background-color: black;
+  background-image: url("../images/moscow.jpeg");
+  height: 75%;
+  display: block;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.spacer {
+  margin: 0px;
+  background-color: white;
+  min-height: 25%;
+  height: auto;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+.parallax_medium {
+  min-height: 50%;
+  display: block;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.parallax_large {
+  min-height: 66%;
+  display: block;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+/* Disable Parallax for Mobile */
+@media only screen and (max-device-width: 1024px) {
+  .moscow, .hongkong, .parallax_medium, .parallax_large {
+        background-attachment: scroll;
+        background-size: cover;
+        width: 100%;
+        /* height: auto; */
+    }
+}
+
+/* Places */
+
+.seychelles {
+  background-image: url("../images/seychelles.jpg");
+}
+
+.finland {
+  background-image: url("../images/finland.jpg");
+}
+
+.hongkong {
+  background-image: url("../images/hongkong.jpg");
+}
